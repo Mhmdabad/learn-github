@@ -1,0 +1,14 @@
+name: README Logger
+
+on:
+  push:
+    branches:
+      - main
+      - test2
+jobs:
+  log:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "README was pushed 🚀"
